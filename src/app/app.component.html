@@ -1,2 +1,28 @@
-<h3>Using bootstrap</h3>
+
+
+<div class="container">
+    <h3>Using bootstrap</h3>
+
+ <input type="text" class="form-control" [(ngModel)]="username">
+<br>
+<br>
+
+<p> {{ username }} </p>
+
+<hr>
+
+<button class="btn btn-primary" [disabled]="username ==='' ? true : false" (click)="onClick()" > Reset </button>
+
+<hr>
+<p *ngIf="username; else noUser">
+
+  El usuario es {{username}}
+</p>
+
+<ng-template #noUser>
+  <p>No user</p>
+</ng-template>
+
+</div>
+
 
