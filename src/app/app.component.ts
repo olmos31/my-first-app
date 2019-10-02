@@ -15,13 +15,13 @@ ngOnInit() {
 
 }
 
-onText(event: Event) {
-this.username = 'Hi';
-}
+// onText(event: Event) {
+// this.username = 'Hi';
+// }
 
-onClick() {
-this.username = '';
-}
+// onClick() {
+// this.username = '';
+// }
 
 
 }
