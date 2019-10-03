@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { Ejercicio1Component } from './ejercicio1/ejercicio1.component';
 import { HomecomponentComponent } from './homecomponent/homecomponent.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { Ejercicio2Component } from './ejercicio2/ejercicio2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ServersComponent,
     Ejercicio1Component,
     HomecomponentComponent,
-    TopBarComponent
+    TopBarComponent,
+    Ejercicio2Component
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     RouterModule.forRoot([
       { path: '', component: HomecomponentComponent },
       { path: 'ejercicio1', component: Ejercicio1Component },
+      { path: 'ejercicio2', component: Ejercicio2Component },
     ])
   ],
   providers: [],

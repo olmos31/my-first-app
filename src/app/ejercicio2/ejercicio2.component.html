@@ -1,0 +1,28 @@
+<!-- <p>ejercicio2 works!</p>
+<div class="container">
+
+
+  <button class="btn btn-primary" (click)="onClick()"> Display Details</button>
+  <p *ngIf="showMessage"> secret password = tuna</p>
+
+
+
+  <div *ngFor="let item of arrayCount" [ngStyle]= "{ background: item>= 5 ? 'blue': 'transparent'}" [ngClass]="{'white-text': item >= 5 }">
+    contador: {{item}}
+  </div>
+
+
+</div> -->
+
+
+<div class="container">
+  <button class="btn btn-primary" (click)="onClick()">Display Details</button>
+
+  <div *ngIf="message">
+    <p> Secret Password = tuna</p>
+  </div>
+
+  <div *ngFor="let item of numberArray" [ngStyle]="{background: item>=5 ? 'blue' : 'Transparent'}" [ngClass]="{'white-text': item>=5}">
+    {{item}}
+  </div>
+</div>
